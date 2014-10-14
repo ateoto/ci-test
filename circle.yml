@@ -13,7 +13,7 @@ dependencies:
     - if [[ -e ~/docker ]]; then docker load -i ~/docker/mongo.tar; fi
     - if [[ -e ~/docker ]]; then docker load -i ~/docker/nginx.tar; fi
     - if [[ -e ~/docker ]]; then docker load -i ~/docker/true.tar; fi
-    - docker pull mongo
+    - docker pull dockerfile/mongodb
     - docker pull dockerfile/nginx
     - docker pull tianon/true
     - mkdir -p ~/docker
